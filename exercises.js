@@ -8,5 +8,16 @@ module.exports = {
             }
         }
         return sum;
+    },
+    findEvenFibSum(max) {
+        let sum = 0;
+        (function fib(a=0,b=1) {
+            const next = a+b;
+            if(next % 2 == 0) sum += next;
+            return next < max ? fib(b,next) : next;
+        })()
+        return sum;
     }
 };
+
+module.exports.findEvenFibSum(400000);
