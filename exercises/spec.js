@@ -27,7 +27,7 @@ describe('Project Euler', () => {
     });
     it('7. 10001st prime', () => {
         const nthPrime = require('./7-10001st-prime.js');
-        expect(nthPrime(10000)).to.equal(29);
+        expect(nthPrime(6)).to.equal(13);
     }); 
     it('8. Largest product in a series', () => {
         const largestProductInSeries = require('./8-largest-product-in-series.js');
