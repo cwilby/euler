@@ -23,7 +23,7 @@ describe('Project Euler', () => {
     });
     it('6. Sum square difference', () => {
         const sumSquareDifference = require('./6-sum-square-difference.js');
-        expect(sumSquareDifference(13195)).to.equal(29);
+        expect(sumSquareDifference(10)).to.equal(2640);
     });
     it('7. 10001st prime', () => {
         const nthPrime = require('./7-10001st-prime.js');
