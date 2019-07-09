@@ -4,23 +4,21 @@ What is the 10 001st prime number?
 */
 
 module.exports = (n) => {
+    let nthPrime = null;
     let primeCount = 0;
-    let index = 1;
-    let currentPrime = null;
 
-    while(primeCount < n) {
-        index++;
+    for (let i = 2; i < n; i++) {
         let isPrime = true;
-        for(let i = 2; i < index; i++) {
-            if (index % i === 0) {
+        for(let j = 2; j < 8; j++) {
+            if (i % j === 0) {
                 isPrime = false;
             }
         }
         if(isPrime) {
             primeCount++;
-            currentPrime = index;
+            nthPrime = i;
         }
     }
 
-    return currentPrime;
+    return nthPrime;
 };
